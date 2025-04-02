@@ -1,19 +1,15 @@
 #include <stdio.h>
-
-int power(int base, int exponent);
+#include "factorial.c"
 
 int main() {
-    int base, exponent;
+    int test_num;
     char choice;
 
     do {
-        printf("Enter base: ");
-        scanf("%d", &base);
+        printf("Enter number: ");
+        scanf("%d", &test_num);
 
-        printf("Enter exponent: ");
-        scanf("%d", &exponent);
-
-        printf("%d^%d = %d\n", base, exponent, power(base, exponent));
+        printf(" factorial of %d: %d\n", test_num, factorial(test_num));
 
         printf("Do you want to calculate another power? (y/n): ");
         scanf(" %c", &choice); // Space before %c to consume any leftover newline character
