@@ -22,6 +22,7 @@ int my_atoi(const char *str) {
     }
 
     // Convert characters to integer
+    // in ascii '0' to '9' are 48 to 57
     while (*str) {
         if (*str >= '0' && *str <= '9') {
             result = result * 10 + (*str - '0');
