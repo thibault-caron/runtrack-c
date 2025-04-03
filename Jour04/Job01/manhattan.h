@@ -7,10 +7,25 @@ typedef struct {
     int y;
 } point;
 
-// ABS macro (ABSOLUTE): if x is negative, return -x; otherwise, return x
+/**
+ * ABS - Macro to calculate the absolute value of a number.
+ *
+ * @x: The number to calculate the absolute value for.
+ *
+ * Return:
+ *   The absolute value of x.
+ */
 #define ABS(x) ((x) < 0 ? -(x) : (x))
 
-// Prototype for the manhattan function
+/**
+ * manhattan - Calculates the Manhattan distance between two points.
+ *
+ * @p1: The first point.
+ * @p2: The second point.
+ *
+ * Return:
+ *   The Manhattan distance between p1 and p2.
+ */
 int manhattan(point p1, point p2);
 
 #endif
