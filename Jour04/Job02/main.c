@@ -1,11 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 #include "print_album.h"
 
-#define INITIAL_BUFFER_SIZE 16  // Initial size of the buffer
-#define BUFFER_GROWTH 16        // How much to grow the buffer by
-#define MAX_INPUT_SIZE 1024     // Maximum allowed input size
+#define INITIAL_BUFFER_SIZE 16
+#define BUFFER_GROWTH 16
+#define MAX_INPUT_SIZE 1024
 
 /**
  * read_line - Reads a line from standard input and returns it as a dynamically allocated string.
